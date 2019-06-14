@@ -1,0 +1,1 @@
+export { RandomRatingButton } from './RandomRatingButton';

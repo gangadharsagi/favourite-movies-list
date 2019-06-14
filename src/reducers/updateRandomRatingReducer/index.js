@@ -1,0 +1,1 @@
+export { updateRandomRatingReducer } from './updateRandomRatingReducer';

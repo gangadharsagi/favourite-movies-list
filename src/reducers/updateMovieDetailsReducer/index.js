@@ -1,0 +1,1 @@
+export { updateMovieDetailsReducer } from './updateMovieDetailsReducer';

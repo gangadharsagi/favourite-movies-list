@@ -1,0 +1,1 @@
+export { getMovieDetailsSelector } from './getMovieDetailsSelector';
