@@ -17,12 +17,7 @@ describe('ReviewDetails', () => {
 
   it('should have LabelValueCell as a child', () => {
     const mockProps = {
-      cards: [
-        [
-          {
-          }
-        ],
-      ],
+      cards: [{}],
     };
     const Wrapper = shallow(
       <Cards {...mockProps}/>,

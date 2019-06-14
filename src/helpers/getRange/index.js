@@ -1,1 +1,0 @@
-export { getRange } from './getRange';

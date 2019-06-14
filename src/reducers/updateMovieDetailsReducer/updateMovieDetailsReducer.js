@@ -1,4 +1,4 @@
-import { getRandomRatingsHelper } from '../../helpers/getRandomRatingsHelper';
+import { getRandomDataByRatingHelper } from '../../helpers/getRandomDataByRatingHelper';
 
 /**
  * This reducer is used to update the movie details from the api response.
@@ -11,11 +11,5 @@ import { getRandomRatingsHelper } from '../../helpers/getRandomRatingsHelper';
 export const updateMovieDetailsReducer = (state, payload) => {
 return {
   ...state,
-  data: state.randomRating ?
-    payload.map(item => ({
-      ...item,
-      rating: getRandomRatingsHelper(),
-    }))
-    : payload,
-}
-};
+  data: getRandomDataByRatingHelper(state, payload),
+}};

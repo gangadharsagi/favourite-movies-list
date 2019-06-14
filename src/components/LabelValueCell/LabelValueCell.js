@@ -26,11 +26,9 @@ export const LabelValueCell = ({ label, value }) => {
 LabelValueCell.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
-  rating: PropTypes.bool,
 };
 
 LabelValueCell.defaultProps = {
   label: '',
   value: '',
-  rating: 0,
 };
