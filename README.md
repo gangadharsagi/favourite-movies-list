@@ -21,5 +21,5 @@ Created the custom middleware to handle the all API requests in the application 
 
 ### Sample screens
 
-![sample]()
+![sample.png]()
 
