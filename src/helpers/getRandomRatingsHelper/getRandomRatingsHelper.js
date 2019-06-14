@@ -1,7 +1,7 @@
 import { RATING } from '../../constants/RATING';
 
 /**
- * A small description explaining where this function is used and why
+ * This helper is used to generate the rating values randomly
  */
 export const getRandomRatingsHelper = () =>
-  (RATING.MIN + Math.random() * (RATING.MAX - RATING.MIN)).toFixed(1);
+  Math.round((RATING.MIN + Math.random() * (RATING.MAX - RATING.MIN)));

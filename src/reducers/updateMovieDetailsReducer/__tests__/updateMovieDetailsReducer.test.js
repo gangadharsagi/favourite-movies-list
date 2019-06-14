@@ -3,27 +3,20 @@ import { updateMovieDetailsReducer } from '../updateMovieDetailsReducer';
 describe('updateReviewReducer', () => {
   it('should update the state and return the new state', () => {
     const mockState = {
-      reviews: [],
-      hasMore: false,
+      randomRating: false,
+      data: []
     };
     const mockPayload = {
-      reviews:  {
-        reviewId: 'R1SQ32067PGIK5',
-        rating: 5,
-        reviewCreated: 1517961600000,
-        productImg: '61YqZpvCyaL',
-      },
-      hasMore: true,
+      movieName: 'abc',
+      rating: 5,
     };
     const expected = updateMovieDetailsReducer(mockState, mockPayload);
     const result = {
-      reviews:  [{
-        reviewId: 'R1SQ32067PGIK5',
-        rating: 5,
-        reviewCreated: 1517961600000,
-        productImg: '61YqZpvCyaL',
-      }],
-      hasMore: true,
+      randomRating: false,
+      data: {
+          movieName: 'abc',
+          rating: 5,
+        }
     };
     expect(expected).toEqual(result);
   });

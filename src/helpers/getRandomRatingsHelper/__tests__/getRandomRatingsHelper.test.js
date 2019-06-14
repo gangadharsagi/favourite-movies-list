@@ -6,7 +6,7 @@ describe('getRandomRatingsHelper', () => {
     mockMath.random = () => 5;
     global.Math = mockMath;
     const expected = getRandomRatingsHelper();
-    const result = '50.0';
+    const result = 50;
     expect(expected).toEqual(result);
   });
 });

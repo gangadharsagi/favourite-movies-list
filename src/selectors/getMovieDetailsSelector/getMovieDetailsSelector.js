@@ -14,7 +14,7 @@ export const getMovieDetails = state => get(
 );
 
 /**
- * This selector is used to memorize reviews details
+ * This selector is used to memorize movie details
  */
 export const getMovieDetailsSelector = createSelector(
   getMovieDetails,
