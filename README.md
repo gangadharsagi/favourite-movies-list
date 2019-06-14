@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/gangadharsagi/favourite-movies-list.svg?style=svg)](https://circleci.com/gh/gangadharsagi/favourite-movies-list)
+
 # Favourite Movies List Component (React, Redux)
 
 ### Setup
