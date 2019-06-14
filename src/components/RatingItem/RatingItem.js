@@ -16,7 +16,7 @@ export const RatingItem = ({ checked, onChange, value, colored }) => (
     <input
       checked={checked}
       className="ratingInput"
-      onChange={e => onChange(value)}
+      onChange={() => onChange(value)}
       type="radio"
       value={value}
     />

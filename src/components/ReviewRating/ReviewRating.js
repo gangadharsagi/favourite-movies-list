@@ -10,20 +10,18 @@ import { Rating } from "../Rating/Rating";
  * @returns {*} a React Class Component
  */
 export class ReviewRating extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      rating: 0
-    };
-  }
+
+  state = {
+    rating: 0
+  };
 
   render() {
-    const { item, onChange } = this.props;
+    const { item, onChange, starCount } = this.props;
     return (
       <Rating
         onChange={onChange(item)}
-        value={this.props.item.rating}
-        starCount={this.props.starCount}
+        value={item.rating}
+        starCount={starCount}
       />
     );
   }

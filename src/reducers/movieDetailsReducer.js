@@ -19,7 +19,7 @@ const reducers = {
 };
 
 /**
- * This reducer is handling the reviews component all reducers
+ * This reducer is handling the movie details reviews component all reducers
  *
  * @param {Object} state - the Redux state of the reducer that this function is
  *  used for

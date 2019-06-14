@@ -13,24 +13,28 @@ import { RatingItem } from "../RatingItem/RatingItem";
  */
 export const Rating = ({ starCount, onChange, value }) => (
   <div className="rating">
-    {starCount.map(item => (
-      <RatingItem
-        colored={value >= item}
-        checked={value === item}
-        value={item}
-        key={Math.random()}
-        onChange={onChange}
-      />
-    ))}
+    {
+      starCount.map(item => (
+        <RatingItem
+          colored={value >= item}
+          checked={value === item}
+          value={item}
+          key={Math.random()}
+          onChange={onChange}
+        />
+      ))
+    }
   </div>
 );
 
 Rating.propTypes = {
   onChange: PropTypes.func,
-  value: PropTypes.any
+  value: PropTypes.any,
+  starCount: PropTypes.any
 };
 
 Rating.defaultProps = {
   onChange: () => {},
-  value: 1
+  value: 1,
+  starCount: 0,
 };

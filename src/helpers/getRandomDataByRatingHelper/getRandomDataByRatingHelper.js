@@ -8,9 +8,10 @@ import { getRandomRatingsHelper } from '../getRandomRatingsHelper';
  * @param {array} payload - selected payload.
  * @returns {*} - updated data
  */
-export const getRandomDataByRatingHelper = (state, payload) => state.randomRating ?
+export const getRandomDataByRatingHelper = (state, payload) =>
+  state.randomRating ?
     payload.map(item => ({
       ...item,
       rating: getRandomRatingsHelper(),
-    }))
-    : payload;
+    })) :
+    payload;

@@ -9,6 +9,9 @@ export const RandomRatingButtonStyles = makeStyles((theme) =>
       marginRight: theme.spacing(3),
       display: 'flex',
       justifyContent: 'flex-end',
+    },
+    active: {
+      backgroundColor: '#2099C3',
     }
   }),
 );

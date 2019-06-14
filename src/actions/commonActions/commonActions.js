@@ -31,9 +31,7 @@ export const updateRating = payload => ({
 });
 
 /**
- * This action is used to update the rating rating randomly
- *
- * @returns {{reviews: array, type: UPDATE_RATING}}
+ * This action is used to update the rating randomly
  */
 let timer = 0;
 export const updateRandomRating = () => (dispatch, getState) => {
@@ -47,8 +45,6 @@ export const updateRandomRating = () => (dispatch, getState) => {
 
 /**
  * This action is used to fetch movie details by using api call
- *
- * @returns {{payload: number, type: string}}
  */
 export const fetchMovieDetails = () => (
   apiActionHelper({
