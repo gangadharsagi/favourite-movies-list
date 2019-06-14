@@ -18,7 +18,6 @@ import { ReviewRatingContainer } from '../../containers/ReviewRatingContainer';
  */
 export const Cards = ({ cards }) => {
     const classes = CardsStyles();
-    console.log(cards);
     return <React.Fragment>
         {
             cards ?

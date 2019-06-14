@@ -2,10 +2,10 @@ import { createSelector } from 'reselect';
 import { get } from 'lodash';
 
 /**
- * Description of what data this get function is getting
+ * This selector is used to get the random rating value from the store.
  *
  * @param {{}} state - the redux state
- * @returns {*} the selected param
+ * @returns {*} randomRating value from the store.
  */
 export const getRandomRating = state => get(
   state,
@@ -14,7 +14,7 @@ export const getRandomRating = state => get(
 );
 
 /**
- * A description explaining what data we are getting and where we are using it.
+ * This selector is used to memorize the random rating value from the store.
  */
 export const randomRatingSelector = createSelector(
   getRandomRating,

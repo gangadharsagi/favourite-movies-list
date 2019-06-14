@@ -19,7 +19,7 @@ export const RandomRatingButton = ({ onClick }) => {
         className={classes.margin}
         onClick={onClick}
       >
-        Random Rating
+        RANDOM RATING
       </ColorButton>
     </div>
   );

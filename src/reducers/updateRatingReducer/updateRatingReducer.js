@@ -1,11 +1,11 @@
 import { getUpdatedDataHelper } from '../../helpers/getUpdatedDataHelper';
 
 /**
- * A small description explaining where this function is used and why
+ * This reducer is used to update the movie details in the store.
  *
  * @param {{}} state - the Redux state of the reducer that this function is
  *  used for
- * @param {*} payload - the payload of the action this reducer is attached to
+ * @param {*} payload - movie details
  * @returns {*} the next Redux state
  */
 export const updateRatingReducer = (state, payload) => {
